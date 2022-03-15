@@ -19,10 +19,10 @@ nav, footer, header, aside {
   display: block; }
 
 html, body {
-  font-family: Open-Sans;
+  font-family: 'Ubuntu', sans-serif;
   color: #000;
   height: 100%;
-  min-width: 1300px;
+  min-width: 100%;
   font-size: 100%;
   line-height: 1;
   font-size: 14px;
@@ -45,7 +45,9 @@ button::-moz-focus-inner {
 
 a, a:visited {
   text-decoration: none;
-  color: #fff; }
+  /* color: #000; */
+  /* display: block; */
+ }
 
 a:hover {
   text-decoration: none; }
@@ -59,3 +61,222 @@ img {
 h1, h2, h3, h4, h5, h6 {
   font-size: inherit;
   font-weight: 400; }
+/* ------------------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&family=Ubuntu:wght@400;700&display=swap');
+.block1{
+  max-width: 1366px;
+  margin: 31px auto;
+}
+.header{
+
+}
+
+/*  HEAD */
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 35px;
+}
+.menu__group1 {
+  display: flex;
+  align-items: center;
+}
+.menu__logo {
+  display: block;
+  min-width: 124px;
+  min-height: 27px;
+}
+.menu__text {
+  max-width: 136px;
+font-size: 10px;
+text-align: left;
+color: #708294;
+margin-right: 45px;
+white-space: nowrap;
+}
+.menu__enter, .menu__registr {
+  margin-right: 24px;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #4655A5;
+  text-decoration: underline;
+}
+.menu__grop2 {
+  display: flex;
+  align-items: center;
+}
+.menu__question {
+font-size: 18px;
+font-weight: 400;
+line-height: 28px;
+color: #6A7E80;
+}
+.menu__question a {
+font-size: 19px;
+font-weight: 700;
+line-height: 24px;
+letter-spacing: -0.05em;
+  color: #000;
+  padding: 0 24px 0 11px;
+
+}
+.menu__button {
+background: #EDF2F7;
+min-width: 195px;
+min-height: 40px;
+border-radius: 999px;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 8px 20px;
+} 
+.menu__link{
+  font-size: 19px;
+font-weight: 700;
+line-height: 24px;
+text-decoration: underline;
+color: #4655A5;
+}
+/* --------------MAIN-HEAD-BLOCK--------------------------------- */
+.block1__main {
+  margin: 122px auto;
+}
+.main__title {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 72px;
+  text-align: center;
+
+}
+.main__text {
+  max-width: 584px;
+  margin: 24px auto;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  text-align: center;
+}
+.main__text span {
+  background: rgba(255, 230, 0, 0.35);
+} 
+.main__rightrow {
+  /* text-align: right; */
+  margin-top: 43px;
+  display: flex;
+  align-items: baseline;
+  margin-left: calc(50% - 273px/2);
+}
+.main__item {
+  margin-right: 149px;
+}
+.main__item:last-child {
+  margin-right: 0px;
+}
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 305px;
+  height: 56px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+  letter-spacing: 0.01em;
+  background: radial-gradient(100% 385.84% at 0% 100%, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, radial-gradient(97.32% 97.32% at 50% 2.68%, rgba(251, 0, 255, 0.8) 0%, rgba(242, 213, 223, 0) 100%), linear-gradient(180deg, #E82299 0%, #FF0055 100%);
+  box-shadow: 0px 2px 2px rgba(255, 255, 255, 0.01), 0px 2px 4px rgba(255, 255, 255, 0.1), 0px 4px 16px rgba(255, 0, 0, 0.1), 0px 8px 24px rgba(227, 18, 209, 0.1);
+  border-radius: 999px;
+}
+.item__tit {
+  position: relative;
+  text-align: right;
+  margin-bottom: 16px;
+  min-width: 322px;
+}
+.item__tit a{
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  color: #4655A5;
+  text-decoration: underline;
+}
+.item__tit a:hover{
+  text-decoration: none;
+}
+.item__tit::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: url(../img/play.png) 0 0 no-repeat;
+  background-size: cover ;
+  width: 48px;
+  height: 48px;
+  
+}
+
+.item__body {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: justify;
+  max-width: 258px;
+  margin-left: 50px;
+  color: #6A7E80;
+}
+.item__body span {
+  color: #E82264;
+}
+.main__advantage {
+  margin: 46px auto;  
+  display: flex;
+  max-width: 984px;
+  align-items: baseline;
+}
+.advantage-column {
+  margin-right: 65px;
+}
+.advantage-column:last-child{
+  margin-right: 0;
+}
+.advantage__item1 {
+  background: url(../img/nout.png) no-repeat;
+  background-size: cover;
+  width: 95px;
+  height: 83px;
+}
+.advantage__item2 {
+  background: url(../img/clock.png) no-repeat;
+  background-size: cover;
+  width: 90px;
+  height: 97px;
+}
+.advantage__item3 {
+  background: url(../img/lybraries.png) no-repeat;
+  background-size: contain;
+  width: 65px;
+  height: 72px;
+}
+
+.item__img {
+
+}
+.item__head {
+  margin-top: 15px;
+font-size: 24px;
+font-weight: 700;
+line-height: 32px;
+text-align: left;
+
+}
+.item__text {
+  margin-top: 8px;
+  max-width: 285px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: left;
+  max-height: 84px;
+}
