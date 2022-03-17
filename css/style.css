@@ -478,7 +478,7 @@ color: #6A7E80;
 .fourbg{
   background: url(../img/group-img_4.png) no-repeat;
   background-size: contain;
-  width: 646.42px;
+  width: 628.42px;
 }
 /* -------------------------MAIN-BLOCK-3----------------------------- */
 .info-block-3 {
@@ -508,15 +508,20 @@ color: #6A7E80;
   height: 445px;
 }
 .block-3__half-two {
-  /* position: relative; */
+  min-height: 540px;
+  position: relative;
   background: #F6EADC;
   width: 100%;
+  z-index: 2;
 }
 .half-two__row {
-  /* position: absolute; */
+  background: transparent;
+  position: absolute;
+  top: -28px;
   display: flex;
   align-items: flex-start;
   padding-bottom: 264px;
+  z-index: 1;
 }
 .two-row__column {
   margin-right: 32px;
