@@ -20,7 +20,7 @@ nav, footer, header, aside {
 
 html, body {
   font-family: 'Ubuntu', sans-serif;
-  color: #000;
+  color: var(--black-color);
   height: 100%;
   min-width: 100%;
   font-size: 100%;
@@ -45,8 +45,6 @@ button::-moz-focus-inner {
 
 a, a:visited {
   text-decoration: none;
-  /* color: #000; */
-  /* display: block; */
  }
 
 a:hover {
@@ -63,12 +61,15 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400; }
 /* ------------------------------------------------- */
 :root {
-  --purple-color:#4655A5;
-  --grey-color:#6A7E80;
-  --black-color: #000;
+  /* bg colors */
   --bg-color-white: #EDF2F7;
   --block-2-bg-color:#F9FBFB;
   --block-3-bg-color: #F6EADC;
+  /* font color */
+  --grey-color:#6A7E80;
+  --purple-color:#4655A5;
+  --black-color: #000;
+  /* fonts */
 }
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&family=Ubuntu:wght@400;700&display=swap');
 .block1{
@@ -473,6 +474,7 @@ color: var(--grey-color);
     
   }
   .first__title {
+    line-height: 30px;
     text-align: center;
     font-size: 200%;
     margin: 0 auto;
@@ -483,7 +485,7 @@ color: var(--grey-color);
     font-size: 120%;
   }
 }
-@media ( max-width: 730px ) {
+@media ( max-width: 747px ) {
   .first__title {
     padding-top: 20px;
     line-height: 24px;
@@ -504,6 +506,12 @@ color: var(--grey-color);
   .second__img, .second__title, .second__text {
     text-align: center;
   } 
+  .second__title {
+    font-size: 120%;
+  }
+  .second__text {
+    font-size: 100%;
+  }
   .second__img {
     margin: 0 auto;
   }
@@ -761,11 +769,11 @@ color: var(--grey-color);
     margin: 0 auto;
   }
   .half-two__row{
-    /* text-align: center; */
     left: 24%;
     margin: 0 auto;
     flex-wrap: wrap;
     max-width: 720px;
+    padding-bottom: 0;
   } 
   .two-row__column {
     margin: 0 auto;
@@ -799,4 +807,9 @@ color: var(--grey-color);
     font-size: 100%;
   }
 
+}
+@media ( max-width: 390px) {
+  .block-3__half-two{
+    min-height: 1000px;
+  }
 }
